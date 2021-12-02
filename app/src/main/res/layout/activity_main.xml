@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.neocaptainnemo.fragmenttransactions2nddecember.HostFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom" />
+
+    <HorizontalScrollView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/allowing_state_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stateloss" />
+
+            <Button
+                android:id="@+id/commit_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commit Now" />
+
+            <Button
+                android:id="@+id/pop_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pop Flow" />
+
+            <Button
+                android:id="@+id/open_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Flow" />
+
+            <Button
+                android:id="@+id/replace_transaction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace Transaction 1" />
+
+            <Button
+                android:id="@+id/replace_transaction_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace Transaction 2" />
+
+            <Button
+                android:id="@+id/replace_transaction_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace Transaction 3" />
+
+
+            <Button
+                android:id="@+id/multiple_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple Transaction" />
+
+            <Button
+                android:id="@+id/hide_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide 1" />
+
+            <Button
+                android:id="@+id/hide_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide 2" />
+
+            <Button
+                android:id="@+id/hide_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide 3" />
+
+            <Button
+                android:id="@+id/show_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show 1" />
+
+            <Button
+                android:id="@+id/show_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show 2" />
+
+            <Button
+                android:id="@+id/show_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show 3" />
+
+            <Button
+                android:id="@+id/remove_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove 1" />
+
+            <Button
+                android:id="@+id/remove_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove 2" />
+
+            <Button
+                android:id="@+id/remove_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove 3" />
+
+            <Button
+                android:id="@+id/add_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add 1" />
+
+            <Button
+                android:id="@+id/add_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add 2" />
+
+            <Button
+                android:id="@+id/add_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add 3" />
+
+            <Button
+                android:id="@+id/replace_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace 1" />
+
+            <Button
+                android:id="@+id/replace_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace 2" />
+
+            <Button
+                android:id="@+id/replace_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replace 3" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
